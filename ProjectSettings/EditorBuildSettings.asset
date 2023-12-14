@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escenas de gravity/Escena en la que trabaja Gravity.unity
     guid: 007d39ac95d44af4eb8f61365f03f6c9
+  - enabled: 1
+    path: Assets/Scenes/Escenas de gravity/Victory.unity
+    guid: e677ecadcdddd6f4db173a43e7b0b8aa
+  - enabled: 1
+    path: Assets/Scenes/Escenas de gravity/Defeat.unity
+    guid: fcbe3977b553d1648b0dad5f6b64e4bf
   m_configObjects: {}
