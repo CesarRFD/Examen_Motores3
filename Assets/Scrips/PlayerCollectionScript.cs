@@ -26,7 +26,7 @@ public class PlayerCollectionScript : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             other.gameObject.tag = "Collected";
-            points += 10;
+            points += 1;
         }
 
         if (points == 10)

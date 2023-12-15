@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ch46_nonPBR (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3d51a1cbec4e574a9443905dd928052, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: f3d51a1cbec4e574a9443905dd928052, type: 3}
       propertyPath: m_Controller
       value: 
@@ -84,6 +88,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f3d51a1cbec4e574a9443905dd928052, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9104996332707884368}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f3d51a1cbec4e574a9443905dd928052, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5787806609220949652}
     - targetCorrespondingSourceObject: {fileID: 1082271958561512970, guid: f3d51a1cbec4e574a9443905dd928052, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1339622426190200850}
@@ -207,6 +214,29 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!136 &-5787806609220949652
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230476343598107262}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12629302
+  m_Height: 1.4774506
+  m_Direction: 1
+  m_Center: {x: -0.0044549787, y: 0.72049946, z: 0}
 --- !u!95 &6816529519227587262 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: f3d51a1cbec4e574a9443905dd928052, type: 3}

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Escenas de gravity/Loading.unity
+    path: Assets/Scenes/Loading.unity
     guid: 8b65d46a2e2552b4ea9c8ebf6063de76
   - enabled: 1
     path: Assets/Scenes/Escenas de gravity/Lobby.unity

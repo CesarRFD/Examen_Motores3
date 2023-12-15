@@ -14,13 +14,10 @@ public class GeneralPointCounter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textMesh;
     private PhotonView PV;
 
-
-
     private void Start()
     {
         textMesh.text = points.ToString();
         PV = GetComponent<PhotonView>();
-
     }
 
     public void PointCollected()
@@ -34,11 +31,8 @@ public class GeneralPointCounter : MonoBehaviour
         winner = IDWinner;
         endGame = true;
     }
-
-
     public void ActivateRPC(int IDWinner)
     {
-        
         PV.RPC("Win", RpcTarget.All,IDWinner);
         //PV.RPC("Win", RpcTarget.All, endGame);
     }

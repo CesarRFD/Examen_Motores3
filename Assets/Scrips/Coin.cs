@@ -13,6 +13,8 @@ public class Coin : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && gameObject.tag =="Coin"){
             remainingScore.PointCollected();
+            Destroy(this.gameObject);
+            Debug.Log("jala");
         }
     }
 }
