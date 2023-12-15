@@ -6896,15 +6896,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35257638
+      value: 0.39366707
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35257638
+      value: 1.1343483
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.35257638
+      value: 1.5145346
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6912,7 +6912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.4
+      value: 21.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6952,7 +6952,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d147fda411e453043aa3408c9ef5239c, type: 2}
     - target: {fileID: 919132149155446097, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_Name
-      value: Orbe
+      value: Moneda
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
