@@ -10,6 +10,11 @@ public class Player : MonoBehaviour
     [SerializeField] private PhotonView view;
     [SerializeField] private Animator anim;
 
+    private void Start()
+    {
+        anim = GetComponentInParent<Animator>();
+    }
+
     private void Update()
     {
         if (view.IsMine)
@@ -17,26 +22,31 @@ public class Player : MonoBehaviour
             if (Input.GetKey("d"))
             {
                 transform.position += Vector3.right * speed * Time.deltaTime;
-                anim.SetBool("walk", true);
+                anim.SetFloat("X", 1);
+                anim.SetFloat("Y", 0);
             }
             if (Input.GetKey("a"))
             {
                 transform.position += Vector3.left * speed * Time.deltaTime;
-                anim.SetBool("walk", true);
+                anim.SetFloat("X", -1f);
+                anim.SetFloat("Y", 0);
             }
             if (Input.GetKey("w"))
             {
                 transform.position += Vector3.forward * speed * Time.deltaTime;
-                anim.SetBool("walk", true);
+                anim.SetFloat("X", 0);
+                anim.SetFloat("Y", 1);
             }
             if (Input.GetKey("s"))
             {
                 transform.position += Vector3.back * speed * Time.deltaTime;
-                anim.SetBool("walk", true);
+                anim.SetFloat("X", 0);
+                anim.SetFloat("Y", -1f);
             }
-            if(!Input.GetKey("d") && !Input.GetKey("a") && !Input.GetKey("w") && !Input.GetKey("s"))
+            if (!Input.GetKey("d") && !Input.GetKey("a") && !Input.GetKey("w") && !Input.GetKey("s"))
             {
-                anim.SetBool("walk", false);
+                anim.SetFloat("X", 0);
+                anim.SetFloat("Y", 0);
             }
         }
     }

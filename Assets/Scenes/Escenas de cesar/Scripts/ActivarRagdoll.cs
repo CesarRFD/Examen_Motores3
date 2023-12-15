@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class ActivarRagdoll : MonoBehaviour
 {
-    [SerializeField] private Rigidbody[] ragdollRigidbodies;
-    [SerializeField] public bool ragdoll = true;
+    [SerializeField] private List<Rigidbody> ragdollRigidbodies = new List<Rigidbody>();
+    public bool ragdoll = true;
 
     void Start()
     {
-        /*ragdollRigidbodies = new Rigidbody[]
+        string[] boneNames = { "mixamorig:Hips", "mixamorig:LeftUpLeg", "mixamorig:LeftLeg", "mixamorig:RightUpLeg", "mixamorig:RightLeg", "mixamorig:Spine", "mixamorig:LeftArm", "mixamorig:LeftForeArm", "mixamorig:Head", "mixamorig:RightArm", "mixamorig:RightForeArm" };
+
+        foreach (string boneName in boneNames)
         {
-            GetComponentInChildren<Rigidbody>(),
-        };*/
+            GameObject boneObject = GameObject.Find(boneName);
+            if (boneObject != null)
+            {
+                Rigidbody rb = boneObject.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    ragdollRigidbodies.Add(rb);
+                }
+            }
+        }
     }
 
     void Update()
