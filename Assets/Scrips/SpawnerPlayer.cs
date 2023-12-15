@@ -11,9 +11,14 @@ public class SpawnerPlayer : MonoBehaviour
     [SerializeField] private float minZ;
     [SerializeField] private float maxZ;
 
+    public int ID;
+
     void Start()
     {
         Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 1f, Random.Range(minZ,maxZ));
         PhotonNetwork.Instantiate(playerPref.name,randomPosition,Quaternion.identity);
+
+        
+        ID = PhotonNetwork.LocalPlayer.ActorNumber;
     }
 }

@@ -3,19 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using Photon.Realtime;
+using Photon.Pun;
 
 public class GeneralPointCounter : MonoBehaviour
 {
     private int points = 25;
-    private bool endGame = false;
+    public bool endGame = false;
+    public int winner;
     [SerializeField] private TextMeshProUGUI textMesh;
+    private PhotonView PV;
 
 
 
     private void Start()
     {
         textMesh.text = points.ToString();
+        PV = GetComponent<PhotonView>();
+
     }
 
     public void PointCollected()
@@ -23,20 +28,18 @@ public class GeneralPointCounter : MonoBehaviour
         points--;
         textMesh.text = points.ToString();
     }
-
-    public void EndGame()
+    [PunRPC]
+    public void Win(int IDWinner)
     {
+        winner = IDWinner;
         endGame = true;
     }
 
-    private void Update()
+
+    public void ActivateRPC(int IDWinner)
     {
-        if(endGame)
-        {
-            SceneManager.LoadScene("Defeat");
-        }
+        
+        PV.RPC("Win", RpcTarget.All,IDWinner);
+        //PV.RPC("Win", RpcTarget.All, endGame);
     }
-
-
-
 }
