@@ -1050,7 +1050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 264382748}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Particulas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6943,6 +6943,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9acf88312ea667143ba5a637c1ff0d68, type: 3}
       propertyPath: m_Materials.Array.data[0]
